@@ -1,0 +1,17 @@
+*.elc
+*.pyc
+*~
+*.log
+*.zip
+dist
+tmp
+*/SciTE.session
+default.db
+media
+*.egg-info
+.build/
+warnings_linkcheck.txt
+.DS_Store
+.idea
+docs/api/lino_extjs6.*
+.eggs/
