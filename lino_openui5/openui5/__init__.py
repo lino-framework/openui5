@@ -88,6 +88,7 @@ class Plugin(Plugin):
             yield ("Openui5", '1.50.8', "http://openui5.org")
             # yield ("jQuery", '?', "http://...")
             yield ("CKEditor", "4.8", "https://ckeditor.com/")
+            yield ("Font Awesome Free", "5.5.0", "https://fontawesome.com/")
 
     # def get_index_view(self):
     #     from . import views
