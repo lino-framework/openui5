@@ -8,5 +8,5 @@ ns = setup_from_tasks(
     # locale_dir='lino_extjs/extjs/locale',
     cleanable_files=['docs/api/lino_openui5.*'],
     demo_projects=[
-        'lino_openui5/projects/teamUi5',
-        'lino_openui5/projects/lydiaUi5'])
+        'lino_openui5.projects.teamUi5',
+        'lino_openui5.projects.lydiaUi5'])
