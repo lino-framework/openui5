@@ -13,7 +13,7 @@ extlinks = {}
 intersphinx_mapping = {}
 
 from lino.sphinxcontrib import configure
-configure(globals(), 'lino_openui5.projects.team6.settings.demo')
+configure(globals(), 'lino_openui5.projects.teamUi5.settings.demo')
 
 #from django.conf import settings
 #settings.SITE.title = "Lino ExtJS 6 Documentation"
@@ -167,4 +167,4 @@ extlinks.update(
     ticket=('http://bugs.saffre-rumma.net/tickets/Ticket/%s', '#'))
 
 extlinks.update(
-    srcref=(openui5.srcref_url, ''))
+    srcref=(lino_openui5.srcref_url, ''))

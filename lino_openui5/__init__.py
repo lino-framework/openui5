@@ -2,7 +2,7 @@
 .. autosummary::
    :toctree:
 
-    extjs
+    openui5
     projects
 
 """
