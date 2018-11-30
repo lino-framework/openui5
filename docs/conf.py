@@ -13,7 +13,7 @@ extlinks = {}
 intersphinx_mapping = {}
 
 from lino.sphinxcontrib import configure
-configure(globals(), 'lino_openui5.projects.team6.settings.demo')
+configure(globals(), 'lino_openui5.projects.teamUi5.settings.demo')
 
 #from django.conf import settings
 #settings.SITE.title = "Lino ExtJS 6 Documentation"
@@ -23,11 +23,10 @@ extensions += ['lino.sphinxcontrib.logo']
 # autodoc_default_flags = ['members']
 autosummary_generate = True
 
+intersphinx_mapping = {}
+from atelier.sphinxconf import interproject
+interproject.configure(globals(), 'atelier lino_book')
 
-from importlib import import_module
-for n in 'atelier lino lino_xl'.split():
-    m = import_module(n)
-    intersphinx_mapping[n] = (m.intersphinx_urls['docs'], None)
 
 import lino_openui5
 
@@ -36,7 +35,7 @@ import lino_openui5
 
 # General information about the project.
 project = "Lino Open ui5 Documentation"
-copyright = '2015-2018 Luc Saffre'
+copyright = '2015-2018 Rumma & Ko Ltd'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -167,4 +166,4 @@ extlinks.update(
     ticket=('http://bugs.saffre-rumma.net/tickets/Ticket/%s', '#'))
 
 extlinks.update(
-    srcref=(openui5.srcref_url, ''))
+    srcref=(lino_openui5.srcref_url, ''))
