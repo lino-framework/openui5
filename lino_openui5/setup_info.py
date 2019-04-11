@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2015-2016 Rumma & Ko Ltd
+# Copyright 2015-2019 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 from __future__ import unicode_literals
@@ -20,6 +20,7 @@ SETUP_INFO = dict(
     classifiers="""\
   Programming Language :: Python
   Programming Language :: Python :: 2
+  Programming Language :: Python :: 3
   Development Status :: 5 - Production/Stable
   Environment :: Web Environment
   Framework :: Django
