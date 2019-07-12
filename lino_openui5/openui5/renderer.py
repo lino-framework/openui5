@@ -31,19 +31,10 @@ class Renderer(ExtRenderer):
 
     can_auth = False
 
-    # working, but shouldn't be used, as it clears the app history
-    def get_detail_url(self, actor, pk, *args, **kw):
-        """Opens detail however clears the app's history"""
-        return self.plugin.build_plain_url(
-            "#",
-            "detail",
-            actor.actor_id,
-            str(pk), *args, **kw)
-
     def get_request_url(self, ar, *args, **kw):
         """Used for turn requests into urls"""
         if ar.actor.__name__ == "Main":
-            return self.plugin.build_plain_url(*args, **kw)
+            return self.front_end.build_plain_url(*args, **kw)
 
         st = ar.get_status()
         kw.update(st['base_params'])
@@ -60,7 +51,7 @@ class Renderer(ExtRenderer):
             kw.setdefault(ext_requests.URL_PARAM_SORT, sc)
         # ~ print '20120901 TODO get_request_url
 
-        return self.plugin.build_plain_url(
+        return self.front_end.build_plain_url(
             ar.actor.app_label, ar.actor.__name__, *args, **kw)
 
     def get_action_params(self, ar, ba, obj, **kw):
