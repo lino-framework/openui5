@@ -39,6 +39,15 @@ class Plugin(Plugin):
         # ui.bs3_renderer = self.renderer
         kernel.extjs_renderer = self.renderer
 
+    # working, but shouldn't be used, as it clears the app history
+    def get_detail_url(self, ar, actor, pk, *args, **kw):
+        """Opens detail however clears the app's history"""
+        return self.build_plain_url(
+            "#",
+            "detail",
+            actor.actor_id,
+            str(pk), *args, **kw)
+
     def get_patterns(self):
         from django.conf.urls import url
         from . import views
@@ -93,13 +102,4 @@ class Plugin(Plugin):
     # def get_index_view(self):
     #     from . import views
     #     return views.App.as_view()
-
-    # working, but shouldn't be used, as it clears the app history
-    def get_detail_url(self, actor, pk, *args, **kw):
-        """Opens detail however clears the app's history"""
-        return self.build_plain_url(
-            "#",
-            "detail",
-            actor.actor_id,
-            str(pk), *args, **kw)
 
