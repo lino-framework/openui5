@@ -1,12 +1,12 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2015-2019 Rumma & Ko Ltd
+# Copyright 2015-2020 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 from __future__ import unicode_literals
 
 SETUP_INFO = dict(
     name='lino_openui5',
-    version='17.10.0',
+    version='20.1',
     install_requires=['lino', 'lino_noi'],
     tests_require=[],
     test_suite='tests',
@@ -19,7 +19,6 @@ SETUP_INFO = dict(
     url="http://www.lino-framework.org",
     classifiers="""\
   Programming Language :: Python
-  Programming Language :: Python :: 2
   Programming Language :: Python :: 3
   Development Status :: 5 - Production/Stable
   Environment :: Web Environment
