@@ -1,7 +1,7 @@
 .. _openui5:
 
 ==========================
-ExtJS 6 interface for Lino
+OpenUI5 front end for Lino
 ==========================
 
 This is the documentation tree for :mod:`lino_openui5`.
@@ -35,10 +35,6 @@ How to try it:
 - Run :manage:`collectstatic`::
 
     $ python manage.py collectstatic
-
-
-
-
 
 
 Content

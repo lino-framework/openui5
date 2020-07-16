@@ -2,12 +2,10 @@
 # Copyright 2015-2020 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
-from __future__ import unicode_literals
-
 SETUP_INFO = dict(
     name='lino_openui5',
-    version='20.1',
-    install_requires=['lino', 'lino_noi'],
+    version='20.7.0',
+    install_requires=['lino'],
     tests_require=[],
     test_suite='tests',
     description="The SAP Open Ui5 user interface for Lino",
@@ -20,15 +18,13 @@ SETUP_INFO = dict(
     classifiers="""\
   Programming Language :: Python
   Programming Language :: Python :: 3
-  Development Status :: 5 - Production/Stable
+  Development Status :: 2 - Pre-Alpha
   Environment :: Web Environment
   Framework :: Django
   Intended Audience :: Developers
   Intended Audience :: System Administrators
   License :: OSI Approved :: BSD License
   Natural Language :: English
-  Natural Language :: French
-  Natural Language :: German
   Operating System :: OS Independent
   Topic :: Database :: Front-Ends
   Topic :: Home Automation
@@ -37,9 +33,9 @@ SETUP_INFO = dict(
 
 SETUP_INFO.update(long_description="""\
 
-The SAP Open Ui5 user interface for Lino
+The SAP Open Ui5 user interface for Lino.
 
-The central project homepage is http://openui5.lino-framework.org/
+The central project homepage is https://openui5.lino-framework.org/
 
 
 """)
