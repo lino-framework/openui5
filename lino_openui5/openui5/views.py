@@ -8,9 +8,10 @@
 from __future__ import division
 from past.utils import old_div
 
-import logging
+import logging ; logger = logging.getLogger(__name__)
 
-logger = logging.getLogger(__name__)
+import zlib
+import codecs
 
 from django import http
 from django.db import models
@@ -670,9 +671,9 @@ def XML_response(ar, tplname, context):
         :param s: value to get compressed.
         :return: Compressed value.
         """
-        import zlib
-        compressed = zlib.compress(str(s))
-        return compressed.encode('base64')
+        compressed = zlib.compress(str(s).encode('utf-8'))
+        # return compressed
+        return codecs.encode(compressed, 'base64')
         # return cgi.escape(s, quote=True)  # escapes "<", ">", "&" "'" and '"'
 
     def fields_search(searched_field, collections):
