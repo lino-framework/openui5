@@ -26,6 +26,7 @@ autosummary_generate = True
 intersphinx_mapping = {}
 from atelier.sphinxconf import interproject
 interproject.configure(globals(), 'atelier lino_book')
+intersphinx_mapping['cg'] = ('https://community.lino-framework.org/', None)
 
 
 import lino_openui5
@@ -65,7 +66,7 @@ language = 'en'
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
 exclude_patterns = [
-    '.build/*', 
+    '.build/*',
     'include/*',
 ]
 
@@ -151,7 +152,7 @@ if False:
     #~ show_source = True
 
     #~ srcref_base_uri="http://code.google.com/lino"
-    #~ srcref_base_uri="http://code.google.com/p/lino/source/browse/#hg" 
+    #~ srcref_base_uri="http://code.google.com/p/lino/source/browse/#hg"
 
 
     #~ nitpicky = True # use -n in Makefile instead
