@@ -1,5 +1,5 @@
 from atelier.invlib import setup_from_tasks
-print(20200725, globals().keys())
+# print(20200725, globals().keys())
 ns = setup_from_tasks(
     globals(), "lino_openui5",
     languages="en de fr et".split(),
