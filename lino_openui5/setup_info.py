@@ -4,7 +4,7 @@
 
 SETUP_INFO = dict(
     name='lino_openui5',
-    version='20.8.0',
+    version='20.8.1',
     install_requires=['lino'],
     tests_require=[],
     test_suite='tests',
@@ -18,7 +18,7 @@ SETUP_INFO = dict(
     classifiers="""\
   Programming Language :: Python
   Programming Language :: Python :: 3
-  Development Status :: 2 - Pre-Alpha
+  Development Status :: 1 - Planning
   Environment :: Web Environment
   Framework :: Django
   Intended Audience :: Developers
@@ -33,10 +33,12 @@ SETUP_INFO = dict(
 
 SETUP_INFO.update(long_description="""\
 
-The SAP Open Ui5 user interface for Lino.
+The SAP Open Ui5 front end for Lino.
+
+This front end has passed the proof of concept phase, i.e. it is visible that it
+works. But it is not ready for production. There is still much work to do.
 
 The central project homepage is https://openui5.lino-framework.org/
-
 
 """)
 
@@ -51,3 +53,5 @@ lino_openui5.projects.lydiaUi5
 lino_openui5.projects.lydiaUi5.settings
 lino_openui5.projects.lydiaUi5.tests
 """.splitlines() if n])
+
+SETUP_INFO.update(include_package_data=True)
