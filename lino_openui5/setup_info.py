@@ -4,7 +4,7 @@
 
 SETUP_INFO = dict(
     name='lino_openui5',
-    version='20.8.1',
+    version='20.8.2',
     install_requires=['lino'],
     tests_require=[],
     test_suite='tests',

@@ -1,4 +1,4 @@
-global-include *.txt *.js *.css *.html *.htm \
+global-include *.txt *.js *.css *.html *.htm *.json \
   *.diff \
   *.ico *.jpg *.png *.gif \
   *.xml \
