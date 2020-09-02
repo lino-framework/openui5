@@ -10,7 +10,7 @@ from lino_noi.lib.noi.settings import *
 class Site(Site):
 
     default_ui = 'lino_openui5.openui5'
-    project_name = "openui5_teamUi5"
+    # project_name = "openui5_teamUi5"
     title = "Lino Noi Open Ui5 demo"
 
     the_demo_date = datetime.date(2020, 5, 23)
