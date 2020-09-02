@@ -25,8 +25,9 @@ autosummary_generate = True
 
 intersphinx_mapping = {}
 from atelier.sphinxconf import interproject
-interproject.configure(globals(), 'atelier lino_book')
+interproject.configure(globals(), 'atelier')
 intersphinx_mapping['cg'] = ('https://community.lino-framework.org/', None)
+intersphinx_mapping['book'] = ('https://www.lino-framework.org/', None)
 
 
 import lino_openui5
