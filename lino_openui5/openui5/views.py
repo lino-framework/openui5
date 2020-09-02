@@ -5,9 +5,6 @@
 """Views for `lino_openui5.openui5`.
 """
 
-from __future__ import division
-from past.utils import old_div
-
 import logging ; logger = logging.getLogger(__name__)
 
 import zlib
@@ -26,7 +23,8 @@ from lino.core import auth
 from lino.utils import isiterable
 from lino.utils.jsgen import py2js
 from lino.core import fields
-from lino.core.fields import choices_for_field, choices_response
+from lino.core.fields import choices_for_field
+from lino.core.views import choices_response
 from lino.core.gfks import ContentType
 
 # from lino.api import dd
