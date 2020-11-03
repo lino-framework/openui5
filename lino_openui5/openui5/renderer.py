@@ -80,11 +80,14 @@ class Renderer(ExtRenderer):
         # js_render_custom_action().
 
         # 20140429 `ar` is now None, see :ref:`welfare.tested.integ`
-        params = self.get_action_params(ar, ba, obj)
-        return "Lino.simple_action(%s,%s,%s,%s,%s,%s)" % (
-            py2js(ba.actor.actor_id), py2js(ba.action.action_name), py2js(rp),
-            py2js(ar.is_on_main_actor), py2js(obj.pk), py2js(params))
-        # bound_action.a)
+        if hasattr(obj, "pk"):
+            params = self.get_action_params(ar, ba, obj)
+            return "Lino.simple_action(%s,%s,%s,%s,%s,%s)" % (
+                py2js(ba.actor.actor_id), py2js(ba.action.action_name), py2js(rp),
+                py2js(ar.is_on_main_actor), py2js(obj.pk), py2js(params))
+            # bound_action.a)
+        else:
+            return "oops!"
 
     # Todo
     def request_handler(self, ar, *args, **kw):
