@@ -29,6 +29,7 @@ class Plugin(Plugin):
     url_prefix = 'ui5'
 
     media_name = 'openui5'
+    disables_plugins = ['tinymce', 'extensible']
 
     # media_root = None
     # media_base_url = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/"
@@ -94,7 +95,7 @@ class Plugin(Plugin):
 
     def get_used_libs(self, html=False):
         if html is not None:
-            yield ("Openui5", '1.50.8', "http://openui5.org")
+            yield ("OpenUI5", '1.50.8', "https://openui5.org")
             # yield ("jQuery", '?', "http://...")
             yield ("CKEditor", "4.8", "https://ckeditor.com/")
             yield ("Font Awesome Free", "5.5.0", "https://fontawesome.com/")

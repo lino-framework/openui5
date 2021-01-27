@@ -17,20 +17,13 @@ How to try it:
 
 - Install some Lino application as explained in :ref:`lino.dev.install`.
 
-- In your local :class:`Site <lino.core.site.Site>` class (defined in
-  your :xfile:`settings.py` file), set set the :attr:`default_ui`
-  attribute to :mod:`lino_openui5.extjs` and override the
-  :meth:`get_apps_modifiers` so that it removes the `tinymce` plugin::
+- In your :xfile:`settings.py` file, set set the :attr:`default_ui
+  <lino.core.site.Site.default_ui>` attribute to `"lino_openui5.openui5"`::
 
     class Site(Site):
         ...
         default_ui = 'lino_openui.openui5'
-
-        def get_apps_modifiers(self, **kw):
-            kw = super(Site, self).get_apps_modifiers(**kw)
-            # remove tinymce plugin
-            kw.update(tinymce=None)
-            return kw
+        ...
 
 - Run :manage:`collectstatic`::
 
@@ -45,3 +38,4 @@ Content
 
    API <api/index>
    specs
+   changes/index

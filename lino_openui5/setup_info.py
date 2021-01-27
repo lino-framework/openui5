@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2015-2020 Rumma & Ko Ltd
+# Copyright 2015-2021 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 SETUP_INFO = dict(
@@ -8,13 +8,13 @@ SETUP_INFO = dict(
     install_requires=['lino'],
     tests_require=[],
     test_suite='tests',
-    description="The SAP Open Ui5 user interface for Lino",
+    description="The OpenUI5 front end for Lino",
     license='BSD-2-Clause',
     include_package_data=False,
     zip_safe=False,
     author='Luc Saffre',
     author_email='luc.saffre@gmail.com',
-    url="http://www.lino-framework.org",
+    url="https://www.lino-framework.org",
     classifiers="""\
   Programming Language :: Python
   Programming Language :: Python :: 3
@@ -33,10 +33,16 @@ SETUP_INFO = dict(
 
 SETUP_INFO.update(long_description="""\
 
-The SAP Open Ui5 front end for Lino.
+An alternative Django admin interface based on the `SAP OpenUI5
+<https://openui5.org/>`__ toolkit.
 
-This front end has passed the proof of concept phase, i.e. it is visible that it
-works. But it is not ready for production. There is still much work to do.
+This Lino front end has passed the proof of concept phase (i.e. it shows that
+the idea works), but it is not ready for production. There is still much work to
+do.
+
+Rumma & Ko Ltd currently have no resources to continue on the OpenUI5 front end.
+Lino is free open source software, so anybody is welcome to work on it, and we
+would be glad to help with getting started.
 
 The central project homepage is https://openui5.lino-framework.org/
 
