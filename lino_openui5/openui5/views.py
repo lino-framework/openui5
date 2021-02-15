@@ -15,7 +15,7 @@ from django.db import models
 from django.conf import settings
 from django.views.generic import View
 from django.core import exceptions
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext as _
 from django.utils.translation import get_language
 
 # from django.contrib import auth
@@ -298,7 +298,7 @@ class ApiList(View):
                                 MAX_ROW_COUNT)
             response = http.HttpResponse(
                 content_type='text/html;charset="utf-8"')
-            doc = xghtml.Document(force_text(ar.get_title()))
+            doc = xghtml.Document(force_str(ar.get_title()))
             doc.body.append(E.h1(doc.title))
             t = doc.add_table()
             # ~ settings.SITE.kernel.ar2html(ar,t,ar.data_iterator)
