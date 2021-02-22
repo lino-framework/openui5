@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# Copyright 2009-2018 Rumma & Ko Ltd
+# Copyright 2009-2021 Rumma & Ko Ltd
 # License: BSD (see file COPYING for details)
 
 """Views for `lino_openui5.openui5`.
@@ -609,7 +609,7 @@ class Connector(View):
             menu=settings.SITE.get_site_menu(u.user_type)
         )
 
-        device_type = request.device_type
+        # device_type = request.device_type
         # print ("device_type", device_type)
         # print(u)
         # print(name)
