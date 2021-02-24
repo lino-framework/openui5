@@ -762,7 +762,7 @@ class Connector(View):
                     if fl is None or fl._datasource is None:
                         return  # 20130804
                     if fl._datasource != res:
-                        fl._other_datasources.add(res)
+                        fl.add_datasource(res)
                     if fl not in collector:
                         collector.add(res)
 
