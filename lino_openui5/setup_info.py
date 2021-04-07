@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # Copyright 2015-2021 Rumma & Ko Ltd
-# License: BSD (see file COPYING for details)
+# License: GNU Affero General Public License v3 (see file COPYING for details)
 
 SETUP_INFO = dict(
     name='lino_openui5',
@@ -14,7 +14,7 @@ SETUP_INFO = dict(
     zip_safe=False,
     author='Luc Saffre',
     author_email='luc.saffre@gmail.com',
-    url="https://www.lino-framework.org",
+    url="https://github.com/lino-framework/openui5",
     classifiers="""\
   Programming Language :: Python
   Programming Language :: Python :: 3
@@ -23,7 +23,7 @@ SETUP_INFO = dict(
   Framework :: Django
   Intended Audience :: Developers
   Intended Audience :: System Administrators
-  License :: OSI Approved :: BSD License
+  License :: OSI Approved :: GNU Affero General Public License v3
   Natural Language :: English
   Operating System :: OS Independent
   Topic :: Database :: Front-Ends
