@@ -2,7 +2,7 @@
 The ``lino_openui5`` package
 ============================
 
-
+Warning: This repository has moved to https://gitlab.com/lino-framework/openui5
 
 
 An alternative Django admin interface based on the `SAP OpenUI5
